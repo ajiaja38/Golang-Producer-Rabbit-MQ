@@ -27,10 +27,5 @@ func main() {
 	jsonBody, err := json.Marshal(body)
 	error.FailOnError(err, "Failed marshal body to json")
 
-	input := 1000
-
-	for i := 1; i <= input; i++ {
-		service.ProducerMsg(jsonBody)
-	}
-
+	service.ProducerMsg(jsonBody)
 }
