@@ -18,14 +18,19 @@ func main() {
 	}
 
 	body := model.UserDao{
-		Name:        "M. Aji Perdana",
-		Age:         23,
-		PhoneNumber: "085695951121",
+		Name:        "Erlin Novasia",
+		Age:         22,
+		PhoneNumber: "085695951122",
 		Address:     "Lampung",
 	}
 
 	jsonBody, err := json.Marshal(body)
 	error.FailOnError(err, "Failed marshal body to json")
 
-	service.ProducerMsg(jsonBody)
+	input := 1000
+
+	for i := 1; i <= input; i++ {
+		service.ProducerMsg(jsonBody)
+	}
+
 }
