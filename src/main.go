@@ -18,9 +18,9 @@ func main() {
 	}
 
 	body := model.UserDao{
-		Name:        "Erlin Novasia",
-		Age:         22,
-		PhoneNumber: "085695951122",
+		Name:        "M. Aji Perdana",
+		Age:         23,
+		PhoneNumber: "085695951121",
 		Address:     "Lampung",
 	}
 
