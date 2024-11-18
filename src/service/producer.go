@@ -21,7 +21,7 @@ func ProducerMsg(bodyMessage []byte) {
 	defer ch.Close()
 
 	q, err := ch.QueueDeclare(
-		"monitoring",
+		"Sensor",
 		true,
 		false,
 		false,
@@ -36,7 +36,7 @@ func ProducerMsg(bodyMessage []byte) {
 
 	err = ch.PublishWithContext(
 		ctx,
-		"amq.direct",
+		"amq.topic",
 		q.Name,
 		false,
 		false,
