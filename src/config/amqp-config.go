@@ -23,6 +23,6 @@ func RmqConnection() (*amqp.Channel, error) {
 		return nil, err
 	}
 
-	log.Print("Success Connect To RMQ")
+	log.Print("Success Connect To RMQ Server")
 	return ch, nil
 }
