@@ -19,6 +19,7 @@ func main() {
 
 	body := model.UserDao{
 		Name:        "M. Aji Perdana",
+		Email:       "ajicooljazz38@gmail.com",
 		Age:         23,
 		PhoneNumber: "085695951121",
 		Address:     "Lampung",
